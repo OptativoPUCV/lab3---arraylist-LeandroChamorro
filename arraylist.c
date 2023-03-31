@@ -14,7 +14,7 @@ ArrayList *createList(void) {
   ArrayList *list = malloc(sizeof(ArrayList));
   list->capacity = 2;
   list->data = malloc(2* sizeof(void*));
-  list->size=0;
+  list->size = 0;
   return list;
 }
 
@@ -35,13 +35,26 @@ void push(ArrayList * l, void * data, int i){
     l->capacity *= 2;
     l->data = realloc(l->data, l->capacity * sizeof(void*));
   }
-  for (int j=l-> size; j > i;j--) l->data[j] = l-> data[j-1];
+  for (int j = l->size ; j > i ; j--) l->data[j] = l-> data[j-1];
 
-  l->data[i] =data;
+  l->data[i] = data;
   l->size++;
 }
 
 void* pop(ArrayList * l, int i){
+    if (i >= l->size) return NULL;
+    for (int j = 0 ; j < l->size ; j++)
+      {
+          if(j == i) return l->data[j];  
+      }
+  
+    if(i < 0) 
+    {
+      for (int j = -(l->size) ; j < 1 ; j++)
+      {
+          if(j == i) return l->data[i];  
+      }  
+    }
     return NULL;
 }
 
