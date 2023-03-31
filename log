@@ -55,3 +55,8 @@ arraylist.c:57:7: error: ‘tam’ undeclared (first use in this function); did 
 arraylist.c:57:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 1a6b162
+Fri 31 Mar 2023 06:36:05 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+6d8ab8e

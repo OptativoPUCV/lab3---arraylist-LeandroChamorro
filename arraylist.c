@@ -54,7 +54,7 @@ void* get(ArrayList * l, int i){
   
     if(i < 0) 
     {
-      tam = -1 * l->size;
+      int tam = -1 * l->size;
       for (int j = tam ; j < 1 ; j++)
       {
           if(j == i) return l->data[i];  
