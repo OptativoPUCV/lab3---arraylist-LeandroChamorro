@@ -42,6 +42,10 @@ void push(ArrayList * l, void * data, int i){
 }
 
 void* pop(ArrayList * l, int i){
+    return NULL;
+}
+
+void* get(ArrayList * l, int i){
     if (i >= l->size) return NULL;
     for (int j = 0 ; j < l->size ; j++)
       {
@@ -55,10 +59,6 @@ void* pop(ArrayList * l, int i){
           if(j == i) return l->data[i];  
       }  
     }
-    return NULL;
-}
-
-void* get(ArrayList * l, int i){
     return NULL;
 }
 
