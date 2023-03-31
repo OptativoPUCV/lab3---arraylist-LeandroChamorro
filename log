@@ -20,3 +20,9 @@ Fri 31 Mar 2023 02:23:09 PM UTC:
  tests:  3|4
 total_score: 20/70
 07ea3cc
+Fri 31 Mar 2023 02:32:53 PM UTC: 
+ arraylist.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ tests:  5|3
+total_score: 30/70
+951084c
