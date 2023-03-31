@@ -43,3 +43,15 @@ Fri 31 Mar 2023 06:33:50 PM UTC:
  tests:  5|3
 total_score: 30/70
 8de8596
+Fri 31 Mar 2023 06:35:55 PM UTC: 
+ arraylist.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:57:7: error: ‘tam’ undeclared (first use in this function); did you mean ‘tm’?
+   57 |       tam = -1 * l->size;
+      |       ^~~
+      |       tm
+arraylist.c:57:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1a6b162
