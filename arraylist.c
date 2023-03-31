@@ -11,7 +11,7 @@ typedef struct ArrayList {
 } ArrayList;
 
 ArrayList *createList(void) {
-    return NULL;
+  return NULL;
 }
 
 void append(ArrayList * l, void * data){
