@@ -88,3 +88,13 @@ Fri 31 Mar 2023 06:37:43 PM UTC:
  tests:  5|3
 total_score: 30/70
 0011803
+Sat 01 Apr 2023 10:42:59 PM UTC: 
+ arraylist.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:50:21: error: expected expression before ‘->’ token
+   50 |     if (i<0 || i >= -> size) return NULL;
+      |                     ^~
+Compilation failed
+a8167dd
