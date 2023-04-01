@@ -108,3 +108,9 @@ arraylist.c:50:21: error: expected expression before ‘->’ token
       |                     ^~
 Compilation failed
 74d0b4b
+Sat 01 Apr 2023 10:43:19 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|2
+total_score: 40/70
+4c8c7bd
