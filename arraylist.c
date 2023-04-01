@@ -45,7 +45,7 @@ void* pop(ArrayList * l, int i){
     if (i<0) i=l->size+i;
     if(i<0 || i >=l->size) return NULL;
     void *data = l->data[i];
-    for (int j= i; j< l->size -1; j++) {l->data[i] = l->data[j+1];
+    for (int j= i; j< l->size -1; j++){ l->data[i] = l->data[j+1];
 }
   l->size--;
     return data;
@@ -63,5 +63,8 @@ int get_size(ArrayList * l){
 
 //remove elements
 void clean(ArrayList * l){
-    
+    l->capacity = 2;
+    l->size = 0;
+    l->data = (void**)realloc(l->data, sizeof(void *) * l->capacity);
+    if(l->data == NULL) exit(EXIT_FAILURE);
 }
